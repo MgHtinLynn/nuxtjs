@@ -10,20 +10,29 @@ module.exports = {
       { hid: 'description', name: 'description', content: '{{ description }}' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,400italic|Material+Icons' }
     ]
   },
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
+  loading: { color: '#448aff' },
   /*
   ** Build configuration
   */
+  css: [
+    { src: 'vue-material/dist/vue-material.min.css', lang: 'css' },
+    { src: '~/assets/theme.scss', lang: 'scss' } // include vue-material theme engine
+  ],
+  plugins: [
+    { src: '~/plugins/vue-material' }
+  ],
   build: {
     /*
     ** Run ESLint on save
     */
+    vendor: ['vue-material'],
     extend (config, ctx) {
       if (ctx.dev && ctx.isClient) {
         config.module.rules.push({
