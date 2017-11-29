@@ -1,15 +1,13 @@
 # Starter
 
-A [Nuxt.js](https://github.com/nuxt/nuxt.js) starter project template without the distraction of a complicated development environment.
-
-Live demo: https://starter.nuxtjs.org
+A [Nuxt.js](https://github.com/nuxt/nuxt.js) + Vue Material starter project template without the distraction of a complicated development environment.
 
 ## Installation
 
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
 ``` bash
-$ vue init nuxt-community/starter-template my-project  
+$ vue init vue-material/nuxtjs my-project  
 $ cd my-project                     
 # install dependencies
 $ npm install # Or yarn install
