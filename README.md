@@ -7,7 +7,7 @@ A [Nuxt.js](https://github.com/nuxt/nuxt.js) + Vue Material starter project temp
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
 ``` bash
-$ vue init vue-material/nuxtjs my-project  
+$ vue init vuematerial/nuxtjs my-project  
 $ cd my-project                     
 # install dependencies
 $ npm install # Or yarn install
